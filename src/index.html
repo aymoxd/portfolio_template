@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en" style="scroll-behavior: smooth;">
+<head>
+    <link rel="stylesheet" href="../dist/main.css">
+    <!-- icon cdn -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css" integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- font inter -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+</head>
+<body class="bg-background overflow-x-hidden">
+
+      <!--======================    navbar   ======================== -->
+      <header class="max-w-[2000px] mx-auto">
+         <nav class="max-w-[2000px] bg-background text-text flex fixed z-50 left-1/2 -translate-x-1/2 h-20 w-full justify-between items-center px-10 md:px-20 lg:px-32">
+          <!-- logo -->
+           <div class="flex items-center gap-3">
+            <img class="w-14 rounded-lg hover:rounded-full " src="../img/profile-pic.png" alt="">
+            <h1 class="flex flex-col"> <span>John Doe</span> <span class="text-sm opacity-50">Full Stack Developer</span> </h1>
+           </div>
+           <!-- links -->
+           <ul class="hidden sm:flex items-center gap-10">
+                 <li><a href="#">Home</a></li>
+                 <li><a href="#projects">Portfolio</a></li>
+                 <li><a href="#about">About</a></li>
+                 <li><a class="bg-primary font-semibold text-background hover:bg-primary/70 py-3 px-7 rounded-lg transition-all duration-200" href="#contact">Say Hello</a></li>
+           </ul>
+
+           <!-- mobile navbar -->
+            <i id="openBtn" class="ri-menu-4-line text-4xl text-primary  sm:hidden transition-all duration-200 active:scale-95 cursor-pointer"></i>
+            <!-- overlay -->
+            <div id="overlay" class="z-40 hidden cursor-pointer w-screen h-screen fixed inset-0 bg-black/50"></div>
+            <!-- menu -->
+              <ul id="menu" class="absolute -translate-y-full z-40 top-0 py-5 px-5 text-center left-0 rounded-b-lg space-y-5 w-full bg-background transition-all duration-300 ease-in-out">
+                <i id="closeBtn" class="ri-close-line text-4xl text-primary cursor-pointer  absolute right-10"></i>
+                 <li class="border-b border-text/50 flex items-center justify-center pb-4"><a class="w-full h-full link" href="#">Home</a></li>
+                 <li class="border-b border-text/50 flex items-center justify-center pb-4"><a class="w-full h-full link" href="#projects">Portfolio</a></li>
+                 <li class="border-b border-text/50 flex items-center justify-center pb-4"><a class="w-full h-full link" href="#about">About</a></li>
+                 <li class=""><a class="link w-full h-full" href="#contact">Say Hello</a></li>
+           </ul>
+
+         </nav>
+      </header>
+
+      <!--======================    main     ======================== -->
+      <main class="max-w-[2000px] mx-auto space-y-40">
+
+        <!-- hero section -->
+         <section class="px-20 md:px-20 lg:px-32 flex flex-col items-center justify-center h-dvh">
+              <p class="text-primary text-sm mb-2">AVAILABLE FOR FREELANCE</p>
+              <h1 class="text-text text-5xl lg:px-44 md:text-6xl lg:text-6xl font-bold text-center mb-5">HEY, I'M JOHN DOE. A CREATIVE DEVELOPER</h1>
+              <div class="text-text flex items-center">DESIGN <div class="bg-primary w-2 h-2 rounded-full mx-3"></div> DEVELOPMENT <div class="bg-primary w-2 h-2 rounded-full mx-3"></div> WEBFLOW</div>
+              <a href="#projects" class="mt-10 font-semibold text-background bg-primary w-52 py-4 px-5  rounded-lg flex items-center justify-between">See My Portfolio<i class="ri-arrow-down-circle-line text-xl text-background"></i></a>
+         </section>
+
+         <!-- about section -->
+         <section id="about" class="px-10 md:px-20 lg:px-32 space-y-10">
+              <div class="flex items-center mb-10 text-2xl text-text font-bold ">MR <div class="bg-primary w-2 h-2 rounded-full mx-2"></div>JOHN DOE</div>
+
+              <div class="flex gap-16 flex-col sm:flex-row justify-between">
+                      <!-- left -->
+                <div class="flex-1 text-3xl text-text font-bold">Lead Product Engineer & Creative Director</div>
+                       <!-- right -->
+                <div class="flex gap-5 flex-1 flex-col text-text">
+                  <h1>John Doe is a skilled developer who delivers high-quality solutions for web and mobile platforms. He focuses on creativity, usability, and client satisfaction.</h1>
+
+                  <p class="opacity-40">He has extensive experience in building scalable applications, interactive designs, and innovative digital solutions for a wide range of clients.</p>
+
+                  <div class="flex items-center justify-between">
+                        <div>
+                          <h1 class="text-primary text-sm">LOCATION</h1>
+                          <p class="text-xl">USA</p>
+                        </div>
+
+                       <div>
+                          <h1 class="text-primary text-sm">EXPERIENCE</h1>
+                          <p class="text-xl">+5 YEARS</p>
+                        </div>
+
+                         <div>
+                          <h1 class="text-primary text-sm">DATE OF BIRTH</h1>
+                          <p class="text-xl">15 March 1995</p>
+                        </div>
+                  </div>
+                </div>
+              </div>
+                 
+              <div class="flex gap-10 flex-col sm:flex-row items-center justify-between">
+                    <div class="bg-card-gradient rounded-lg flex-1 gap-5 w-full sm:w-auto flex flex-col items-center justify-center py-9 px-10 text-text">
+                      <h1 class="text-4xl font-bold">+8</h1>
+                      <p class="font-semibold">YEARS OF EXPERIENCE</p>
+                    </div>
+
+                         <div class="bg-card-gradient rounded-lg flex-1 gap-5 w-full sm:w-auto flex flex-col items-center justify-center py-9 px-10 text-text">
+                      <h1 class="text-4xl font-bold">+35</h1>
+                      <p class="font-semibold">PROJECTS COMPLETED</p>
+                    </div>
+
+                         <div class="bg-card-gradient rounded-lg md:h-full flex-1 gap-5 w-full sm:w-auto flex flex-col items-center justify-center md:bg-red-400 py-9 px-10 text-text">
+                      <h1 class="text-4xl font-bold">+20</h1>
+                      <p class="font-semibold">HAPPY CLIENTS</p>
+                    </div>
+              </div>
+         </section>
+
+          <!-- projects section -->
+        
+
+<!-- Projects Grid -->
+<section class="px-20 md:px-20 lg:px-32 ">
+                <div class="flex items-center mb-10 text-2xl text-text font-bold ">MY <div class="bg-primary w-2 h-2 rounded-full mx-2"></div>PORTFOLIO</div>
+
+  <div class="grid gap-4 h-dvh
+              grid-rows-4 grid-cols-2
+              md:grid-rows-3 md:grid-cols-4">
+
+    <!-- Card 1 — Wide (col-span-2) -->
+    <div class="relative col-span-2 rounded-xl overflow-hidden group shadow-md">
+      <img class="absolute inset-0 z-10 w-full h-full object-cover object-center
+                  transition-transform duration-500 ease-in-out group-hover:scale-105"
+           src="../img/post-image-1.png" alt="Online Store project preview" />
+      <div class="absolute inset-0 z-20 bg-gradient-to-t from-black/85 via-black/25 to-transparent
+                  transition-opacity duration-300 group-hover:from-black/90"></div>
+      <div class="absolute inset-0 z-30 flex flex-col justify-end items-start p-6">
+        <span class="text-[11px] font-semibold uppercase tracking-widest text-white/50 mb-1.5">E-Commerce</span>
+        <h2 class="text-xl font-bold leading-tight text-white mb-1.5">Online Store</h2>
+        <p class="text-sm leading-relaxed text-white/65 line-clamp-2">A complete e-commerce platform with shopping cart, payment gateway, and product catalog.</p>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="relative rounded-xl overflow-hidden group shadow-md">
+      <img class="absolute inset-0 z-10 w-full h-full object-cover object-center
+                  transition-transform duration-500 ease-in-out group-hover:scale-105"
+           src="../img/post-image-2.png" alt="Analytics Dashboard project preview" />
+      <div class="absolute inset-0 z-20 bg-gradient-to-t from-black/85 via-black/25 to-transparent
+                  transition-opacity duration-300 group-hover:from-black/90"></div>
+      <div class="absolute inset-0 z-30 flex flex-col justify-end items-start p-5">
+        <span class="text-[11px] font-semibold uppercase tracking-widest text-white/50 mb-1.5">Data</span>
+        <h2 class="text-lg font-bold leading-tight text-white mb-1.5">Analytics Dashboard</h2>
+        <p class="text-sm leading-relaxed text-white/65 line-clamp-2">Interactive dashboard for tracking user activity, system stats, and business insights.</p>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="relative rounded-xl overflow-hidden group shadow-md">
+      <img class="absolute inset-0 z-10 w-full h-full object-cover object-center
+                  transition-transform duration-500 ease-in-out group-hover:scale-105"
+           src="../img/post-image-3.png" alt="Fitness App project preview" />
+      <div class="absolute inset-0 z-20 bg-gradient-to-t from-black/85 via-black/25 to-transparent
+                  transition-opacity duration-300 group-hover:from-black/90"></div>
+      <div class="absolute inset-0 z-30 flex flex-col justify-end items-start p-5">
+        <span class="text-[11px] font-semibold uppercase tracking-widest text-white/50 mb-1.5">Mobile</span>
+        <h2 class="text-lg font-bold leading-tight text-white mb-1.5">Fitness App</h2>
+        <p class="text-sm leading-relaxed text-white/65 line-clamp-2">Cross-platform mobile app for tracking workouts, diet plans, and progress over time.</p>
+      </div>
+    </div>
+
+    <!-- Card 4 — Wide on small screens -->
+    <div class="relative col-span-2 sm:col-span-1 rounded-xl overflow-hidden group shadow-md">
+      <img class="absolute inset-0 z-10 w-full h-full object-cover object-center
+                  transition-transform duration-500 ease-in-out group-hover:scale-105"
+           src="../img/post-image-4.png" alt="Landing Page Design project preview" />
+      <div class="absolute inset-0 z-20 bg-gradient-to-t from-black/85 via-black/25 to-transparent
+                  transition-opacity duration-300 group-hover:from-black/90"></div>
+      <div class="absolute inset-0 z-30 flex flex-col justify-end items-start p-5">
+        <span class="text-[11px] font-semibold uppercase tracking-widest text-white/50 mb-1.5">Design</span>
+        <h2 class="text-lg font-bold leading-tight text-white mb-1.5">Landing Page Design</h2>
+        <p class="text-sm leading-relaxed text-white/65 line-clamp-2">Responsive landing page with a modern UI, clear call-to-action, and smooth animations.</p>
+      </div>
+    </div>
+
+    <!-- Card 5 -->
+    <div class="relative rounded-xl overflow-hidden group shadow-md">
+      <img class="absolute inset-0 z-10 w-full h-full object-cover object-center
+                  transition-transform duration-500 ease-in-out group-hover:scale-105"
+           src="../img/post-image-1.png" alt="Task Manager App project preview" />
+      <div class="absolute inset-0 z-20 bg-gradient-to-t from-black/85 via-black/25 to-transparent
+                  transition-opacity duration-300 group-hover:from-black/90"></div>
+      <div class="absolute inset-0 z-30 flex flex-col justify-end items-start p-5">
+        <span class="text-[11px] font-semibold uppercase tracking-widest text-white/50 mb-1.5">Productivity</span>
+        <h2 class="text-lg font-bold leading-tight text-white mb-1.5">Task Manager App</h2>
+        <p class="text-sm leading-relaxed text-white/65 line-clamp-2">User-friendly mobile app for managing tasks, deadlines, and reminders efficiently.</p>
+      </div>
+    </div>
+
+    <!-- Card 6 — Wide (sm:col-span-2) -->
+    <div class="relative sm:col-span-2 rounded-xl overflow-hidden group shadow-md">
+      <img class="absolute inset-0 z-10 w-full h-full object-cover object-center
+                  transition-transform duration-500 ease-in-out group-hover:scale-105"
+           src="../img/post-image-2.png" alt="Pomodoro Tracker project preview" />
+      <div class="absolute inset-0 z-20 bg-gradient-to-t from-black/85 via-black/25 to-transparent
+                  transition-opacity duration-300 group-hover:from-black/90"></div>
+      <div class="absolute inset-0 z-30 flex flex-col justify-end items-start p-5">
+        <span class="text-[11px] font-semibold uppercase tracking-widest text-white/50 mb-1.5">Productivity</span>
+        <h2 class="text-lg font-bold leading-tight text-white mb-1.5">Pomodoro Tracker</h2>
+        <p class="text-sm leading-relaxed text-white/65 line-clamp-2">Web app for boosting productivity using Pomodoro technique with stats tracking.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+          <!-- service section -->
+          <section id="services" class="px-10 md:px-20 lg:px-32">
+            <div class="flex items-center mb-10 text-2xl text-text font-bold ">MY<div class="bg-primary w-2 h-2 rounded-full mx-2"></div>SERVICES</div>
+                
+            <!-- cards -->
+            <div class="flex flex-col sm:flex-row gap-5 lg:gap-10">
+
+            <div class="bg-card-gradient p-7 rounded-lg h-96 w-full sm:w-auto flex flex-col items-start justify-end relative space-y-3 text-text">
+              <i class="ri-double-quotes-r text-5xl sm:text-6xl text-primary absolute left-7 top-7"></i>
+                      <span class="text-sm text-primary">01</span>
+                      <h1 class="text-2xl font-semibold">Backend Development</h1>
+                      <p class="opacity-40 text-sm md:text-base">Building secure and scalable backend systems for web and mobile applications.</p>
+             </div>
+
+            <div class="bg-card-gradient p-7 rounded-lg h-96 w-full sm:w-auto flex flex-col items-start justify-end relative space-y-3 text-text">
+             <i class="ri-code-line text-5xl sm:text-6xl text-primary absolute left-7 top-7"></i>
+                      <span class="text-sm text-primary">02</span>
+                      <h1 class="text-2xl font-semibold">Frontend Development</h1>
+                      <p class="opacity-40 text-sm md:text-base">Creating responsive and interactive user interfaces with modern technologies.</p>
+             </div>
+
+            <div class="bg-card-gradient p-7 rounded-lg h-96 w-full sm:w-auto flex flex-col items-start justify-end relative space-y-3 text-text">
+              <i class="ri-stock-fill text-5xl sm:text-6xl text-primary absolute left-7 top-7"></i>
+                      <span class="text-sm text-primary">03</span>
+                      <h1 class="text-2xl font-semibold">Full Stack Development</h1>
+                      <p class="opacity-40 text-sm md:text-base">Delivering end-to-end solutions by combining frontend and backend expertise.</p>
+             </div>
+
+            </div>
+          </section>
+
+          <!-- contact me section -->
+          <section id="contact" class="px-10 md:px-20 lg:px-32 flex gap-10 flex-col">
+                 <div class="flex items-center mb-10 text-2xl text-text font-bold ">CONTACT<div class="bg-primary w-2 h-2 rounded-full mx-2"></div>ME</div>
+               
+                 <div class="flex gap-5 flex-col md:flex-row">
+                  <!-- left info -->
+                   <div class="flex flex-col gap-5 flex-1">
+
+                       <div class="h-40 flex p-5 rounded-lg flex-col justify-between bg-card-gradient w-full">
+                        <h1 class="text-primary text-sm">CONTACT WITH ME</h1>
+                        <div class="flex gap-5 text-background">
+                               <i class="ri-facebook-circle-fill text-4xl text-text"></i>
+                               <i class="ri-instagram-line text-4xl text-text"></i>
+                               <i class="ri-linkedin-box-fill text-4xl text-text"></i>
+                               <i class="ri-github-fill text-4xl text-text"></i>
+                               <i class="ri-dribbble-fill text-4xl text-text"></i>
+                               <i class="ri-behance-line text-4xl text-text"></i>
+                        </div>
+                       </div>
+                       
+                       <div class="flex flex-col gap-5 sm:flex-row">
+                            <div class="h-40 flex p-5 rounded-lg flex-col justify-between bg-card-gradient w-full">
+                        <h1 class="text-primary text-sm">EMAIL</h1>
+                       <p class="text-text">john.doe@example.com</p>
+                       </div>
+
+                           <div class="h-40 flex p-5 rounded-lg flex-col justify-between bg-card-gradient w-full">
+                        <h1 class="text-primary text-sm">PHONE</h1>
+                       <p class="text-text">+1 555-123-4567</p>
+                       </div>
+                       </div>
+                   </div>
+                  <!-- form contact -->
+                   <form class="flex flex-col gap-5 flex-1" action="">
+                     <!-- inputs -->
+                     <div class="flex flex-col gap-5 lg:flex-row">
+                              <input class="py-4 rounded-lg bg-text/10 text-text outline-none pl-5 flex-1 transition-all duration-200 focus:ring-1 ring-primary" type="text" placeholder="Enter your name" required>
+                              <input class="py-4 rounded-lg bg-text/10 text-text outline-none pl-5 flex-1 transition-all duration-200 focus:ring-1 ring-primary" type="email" placeholder="example@gmail.com" required>
+                     </div>
+                      <!-- textarea -->
+                     <div>
+                      <textarea class="rounded-lg bg-text/10 text-text py-4 h-44 outline-none pl-5 w-full transition-all duration-200 focus:ring-1 ring-primary" placeholder="Enter your message" required></textarea>
+                     </div>
+                                   <button class="font-semibold text-background bg-primary py-4 px-10 rounded-lg">Send Message</button>
+                   </form>
+                 </div>
+          </section>
+      </main>
+
+      <!--======================    footer   ======================== -->
+      <footer class="max-w-[2000px] mx-auto px-10 md:px-20 lg:px-32 flex flex-col sm:flex-row gap-5 items-center justify-between mt-40 text-text pb-5">
+                     <div>&copy; 2026 JOHN DOE</div>
+                         <div class="flex gap-5 text-background">
+                               <i class="ri-facebook-circle-fill text-2xl text-text"></i>
+                               <i class="ri-instagram-line text-2xl text-text"></i>
+                               <i class="ri-linkedin-box-fill text-2xl text-text"></i>
+                               <i class="ri-github-fill text-2xl text-text"></i>
+                               <i class="ri-dribbble-fill text-2xl text-text"></i>
+                               <i class="ri-behance-line text-2xl text-text"></i>
+                        </div>
+      </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
